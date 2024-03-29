@@ -303,20 +303,8 @@ func (this *Configuration) Initialise() {
 	if len(this.Conn) == 0 {
 		this.Conn = []map[string]interface{}{
 			map[string]interface{}{
-				"type":  "sftp",
-				"label": "SFTP",
-			},
-			map[string]interface{}{
-				"type":  "s3",
-				"label": "S3",
-			},
-			map[string]interface{}{
-				"type":  "ftp",
-				"label": "FTP",
-			},
-			map[string]interface{}{
-				"type":  "webdav",
-				"label": "WebDAV",
+				"type":  "local",
+				"label": "local",
 			},
 		}
 		shouldSave = true
